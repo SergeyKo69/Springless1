@@ -1,5 +1,6 @@
 package ru.kogut.less1.packbean;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -7,8 +8,9 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 public class Bean2 {
     public Beans bean;
+    @Autowired
     public Bean1 bean1;
-    public Bean2(Beans bean, Bean1 bean1) {
+    public Bean2(Beans bean) {
         this.bean = bean;
         this.bean1 = bean1;
     }

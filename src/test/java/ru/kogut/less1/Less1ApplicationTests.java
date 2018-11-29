@@ -16,7 +16,7 @@ public class Less1ApplicationTests {
         final Bean1 bean1 = context.getBean(Bean1.class, Beans.BEAN1);
         Assert.assertNotNull(bean1);
         Assert.assertEquals(bean1.getBean(),Beans.BEAN1);
-        final Bean2 bean2 = context.getBean(Bean2.class,Beans.BEAN2,bean1);
+        final Bean2 bean2 = context.getBean(Bean2.class,Beans.BEAN2);
         Assert.assertNotNull(bean2);
         Assert.assertNotNull(bean2.getBean1());
         Assert.assertEquals(bean2.getBean(),Beans.BEAN2);

@@ -14,7 +14,6 @@ public class Bean2 {
 
     public Bean2(Beans bean) {
         this.bean = bean;
-        this.bean1 = bean1;
     }
 
     public Bean2() {

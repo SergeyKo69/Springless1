@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 public class Bean2 {
     public Beans bean;
+
     @Autowired
     public Bean1 bean1;
+
     public Bean2(Beans bean) {
         this.bean = bean;
         this.bean1 = bean1;
